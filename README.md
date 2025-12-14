@@ -1,31 +1,61 @@
-# Task Manager CLI – Java
+# ✅ Task Manager CLI (Java)
 
-A simple and efficient **Command-Line Task Manager application** built using **Java**.  
-This project allows users to create, manage, update, and persist tasks using file-based storage.
+**Task Manager CLI** is a robust, lightweight command-line application built with **Java**. It allows users to efficiently manage their daily tasks with persistent file storage, ensuring data remains safe even after the program exits.
 
-It demonstrates **core Java concepts**, file handling, collections, and basic object-oriented programming.
+## 📂 Repository Content
+
+This project consists of a single-file Java application designed for simplicity and portability:
+
+* **`TaskManager.java`:** The core source code containing:
+    * **Task Model:** Defines task properties (ID, title, description, status, timestamp).
+    * **File Persistence:** Methods (`load`, `save`) to read/write tasks to a local `tasks.txt` file.
+    * **CLI Interface:** A menu-driven loop for user interaction.
 
 ---
 
-## 🚀 Features
+## ✨ Key Features
 
-- Add new tasks with title and description
-- View all tasks with status (TODO / DONE)
-- Mark tasks as completed
-- Remove tasks using unique ID
-- Persistent storage using text files
-- Automatically loads tasks on program start
-- Simple and user-friendly CLI menu
+* **📝 CRUD Operations:** Easily **Add** new tasks, **List** existing ones, and **Remove** unwanted entries.
+* **✅ Status Tracking:** Mark tasks as **DONE** or **TODO** to keep track of progress.
+* **💾 Persistent Storage:** Automatically saves all data to `tasks.txt` so your list is restored next time you run the app.
+* **🆔 Unique IDs:** Uses `UUID` to ensure every task has a unique identifier for safe deletion and updates.
+* **🕒 Timestamps:** Records the exact creation date and time for every task.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+* Java Development Kit (JDK) 8 or higher installed.
+
+### Installation & Execution
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/pushtikadia/Task_Manager.git](https://github.com/pushtikadia/Task_Manager.git)
+    ```
+2.  **Navigate to the directory:**
+    ```bash
+    cd Task_Manager
+    ```
+3.  **Compile the code:**
+    ```bash
+    javac TaskManager.java
+    ```
+4.  **Run the application:**
+    ```bash
+    java TaskManager
+    ```
 
 ---
 
 ## 🛠️ Technologies Used
 
-- **Java (JDK 8+)**
-- Core Java Libraries:
-  - `java.util` – collections, scanner, UUID
-  - `java.io` – file operations
-  - `java.nio.file` – modern file handling
-  - `java.time` – date and time management
+* **Language:** Java (JDK 8+)
+* **Libraries:** `java.util` (Collections, UUID), `java.io` (File Handling), `java.time` (LocalDateTime)
 
 ---
+
+<p align="center">
+  <b>Task Manager CLI</b> • Created by <a href="https://github.com/pushtikadia"><b>Pushti Kadia</b></a>
+</p>
